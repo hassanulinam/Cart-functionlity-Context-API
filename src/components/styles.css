@@ -67,3 +67,11 @@
 .danger {
   background-color: tomato;
 }
+
+.navbar-container {
+  background-color: black;
+  padding: 10px;
+  color: inherit;
+  display: flex;
+  justify-content: space-evenly;
+}
