@@ -3,7 +3,7 @@ import "./styles.css";
 
 const SingleProduct = ({ product }: { product: ProductType }) => {
   const { id, name, desc, price, imgUrl } = product;
-  const { cart, setCart, products } = CartState();
+  const { cart, setCart } = CartState();
   return (
     <div className="single-product--card">
       <img alt="product-img" src={imgUrl} className="product-img" />

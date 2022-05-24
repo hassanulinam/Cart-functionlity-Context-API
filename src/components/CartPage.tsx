@@ -7,7 +7,9 @@ const CartPage = () => {
   return (
     <div className="cart-page--bgcontainer">
       <h2>My-Cart</h2>
-      <p>Total Price: {totlaPrice}</p>
+      <p className="product-price bold">
+        Total Price: ${totlaPrice} <br /> Total Items: {cart.length}
+      </p>
       <div className="product-cards--list">
         {cart.map((p) => (
           <SingleProduct key={p.id} product={p} />
